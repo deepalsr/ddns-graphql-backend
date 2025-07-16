@@ -1,0 +1,21 @@
+{
+  "name": "ddnsgraphql-backend",
+  "version": "1.0.0",
+  "description": "GraphQL backend for DDNS project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "indexer": "node indexer.js"
+  },
+  "dependencies": {
+    "apollo-server": "^3.13.0",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.15.0",
+    "graphql": "^16.11.0",
+    "mongoose": "^7.8.7"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
+}
