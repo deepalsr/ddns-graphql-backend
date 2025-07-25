@@ -8,6 +8,11 @@ const resolvers = {
     getDomainByName: async (_, { name }) => {
       return await Domain.findOne({ name });
     },
+   getDomainsByOwner: async (_, { owner }) => {
+     return await Domain.find({ owner });
+    },
+
+
   },
   Mutation: {
     registerDomain: async (_, { name, owner, cid }) => {

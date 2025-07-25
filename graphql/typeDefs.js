@@ -11,6 +11,7 @@ const typeDefs = gql`
   type Query {
     getAllDomains: [Domain]
     getDomainByName(name: String!): Domain
+    getDomainsByOwner(owner: String!): [Domain]
   }
 
   type Mutation {
